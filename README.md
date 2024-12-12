@@ -123,5 +123,11 @@ This section discusses potential future improvements to the FutureMentor platfor
 5.	Machine learning-powered recommendations: Using machine learning algorithms to provide personalized course recommendations can improve student engagement and satisfaction. This would be a medium to high-priority enhancement.
 6.	Virtual reality/augmented reality integration: Adding virtual reality or augmented reality components to certain courses can enhance the learning experience and make it more immersive. This would be low to medium-priority enhancement.
 Overall, these enhancements would significantly improve the FutureMentor platform and its offerings to students, instructors, and administrators. The implementation timeline and priority would depend on various factors such as the resources available and the specific needs and goals of the platform.
+
+
+
 CREATE .env and INSTALL node_modules
+
+
+
 thank you mr love babbar mentor of the project and happy to lern MERN with you for the half of the year.
