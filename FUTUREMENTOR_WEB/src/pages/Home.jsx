@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 // import Banner from "../assets/Images/banner.mp4"
 // import coder from "../assets/Images/maxresdefault.jpg"
 import vector from "../assets/Images/heroVector.webp"
-import tree from "../assets/Images/tree.png"
+import tree from "../assets/Images/bgnet.png"
 // Component Imports
 import Footer from "../components/common/Footer"
 import ReviewSlider from "../components/common/ReviewSlider"
@@ -23,10 +23,10 @@ function Home() {
   return (
     <div>
       {/* Section 1 */}
-      <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 text-white">
+      <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 text-white ">
         {/* Become a Instructor Button */}
         <Link to={"/signup"}>
-          <div className="group mx-auto mt-16 w-fit rounded-full bg-richblack-800 p-1 font-bold text-richblack-200 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none z-0 shadow-lg shadow-caribbeangreen-100">
+          <div className="group mx-auto mt-36 w-fit rounded-full bg-richblack-800 p-1 font-bold text-richblack-200 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none z-0 shadow-lg shadow-caribbeangreen-100 ">
             <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900 z-0 ">
               <p>Become an Instructor</p>
               <FaArrowRight />
@@ -36,16 +36,15 @@ function Home() {
 
         {/* Heading */}
         <div className="text-center text-4xl font-semibold z-0">
-          Empower Your Future with
-          <HighlightText text={"Coding Skills"} />
+        Empower Your Future with 
+          <HighlightText text={"Diverse Learning Opportunities"} />
         </div>
 
         {/* Sub Heading */}
-        <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300 z-0">
-          With our online coding courses, you can learn at your own pace, from
-          anywhere in the world, and get access to a wealth of resources,
-          including hands-on projects, quizzes, and personalized feedback from
-          instructors.
+        <div className="mt-3 w-[90%] text-center text-lg font-bold text-richblue-50 z-0 ">
+        With FutureMentor's online courses, you can learn at your own pace, from anywhere in the world, across a variety of fields.
+         Gain access to a wealth of resources, including hands-on projects, and personalized feedback from expert instructors.
+         Whether it's coding, business, design, or personal development, we’re here to guide you toward your goals and unlock your potential.
         </div>
 
         {/* CTA Buttons */}
@@ -68,7 +67,7 @@ function Home() {
             >
             <source src={Banner} type="video/mp4" />
           </video> */}
-          <img className="w-[100vw]" src={vector} alt="" />
+          <img className="w-[100vw] -mt-40" src={vector} alt=""/>
         </div>
 
         {/* Code Section 1  */}
@@ -130,6 +129,82 @@ function Home() {
           />
         </div>
 
+        {/* Code Section 1  */}
+        <div>
+          <CodeBlocks
+            position={"lg:flex-row"}
+            heading={
+              <div className="text-4xl font-semibold">
+                Unlock your 
+                 <HighlightText text={"Engineering Potential with Our Online Courses"} /> with our online
+                courses.
+              </div>
+            }
+            subheading={
+              "Our courses are designed and taught by industry experts with years of experience in mechanical engineering. They're passionate about sharing their knowledge, covering topics like design, thermodynamics, and advanced manufacturing to help you build a solid foundation for your future."
+            }
+            ctabtn1={{
+              btnText: "Try it Yourself",
+              link: "/signup",
+              active: true,
+            }}
+            ctabtn2={{
+              btnText: "Learn More",
+              link: "/signup",
+              active: false,
+            }}
+            codeColor={"text-white"}
+            codeblock={`We use the First Law of Thermodynamics:
+ΔU=Q−W
+Where:
+ΔU = Change in internal energy
+Q = Heat absorbed by the system (800 J)
+𝑊 = Work done by the system (400 J)
+First, calculate the change in internal energy:
+Δ𝑈=800J−400J=400J
+ΔU=800J−400J=400J
+Now, calculate the final internal energy by adding the change in internal energy to the initial internal energy:
+𝑈final=𝑈initial+Δ𝑈=1500J+400J=1900J
+Ufinal=Uinitial+ΔU=1500J+400J=1900J
+ Thus, the final internal energy of the gas is 1900 J.`}
+            backgroundGradient={<div className="codeblock3 absolute"></div>}
+          />
+        </div>
+
+        {/* Code Section 2 */}
+        <div>
+          <CodeBlocks
+            position={"lg:flex-row-reverse"}
+            heading={
+              <div className="w-[100%] text-4xl font-semibold lg:w-[50%]">
+                Begin Your<HighlightText text={"Financial Journey"} /> Now
+              
+              </div>
+            }
+            subheading={"Go ahead, dive right in. Our hands-on learning approach ensures you'll be analyzing real financial data and solving practical problems from your very first lesson."}
+            ctabtn1={{
+              btnText: "Continue Lesson",
+              link: "/signup",
+              active: true,
+            }}
+            ctabtn2={{
+              btnText: "Learn More",
+              link: "/signup",
+              active: false,
+            }}
+            codeColor={"text-lime-300"}
+            codeblock={` compound interest formula:
+A=P(1+ r/n)^nt
+Where:
+𝑃=10,000
+𝑟=0.05
+𝑛=1
+t=3
+𝐴=10,000(1+0.05)3=10,000×1.157625=11,576.25
+The investment will be worth $11,576.25 after 3 years.`}
+            backgroundGradient={<div className="codeblock4 absolute"></div>}
+          />
+        </div>
         {/* Explore Section */}
         <ExploreMore />
       </div>
