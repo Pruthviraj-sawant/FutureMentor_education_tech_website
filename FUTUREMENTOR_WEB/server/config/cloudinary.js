@@ -1,4 +1,4 @@
-const cloudinary = require("cloudinary").v2; //! Cloudinary is being required
+const cloudinary = require("cloudinary"); //! Cloudinary is being required
 
 exports.cloudinaryConnect = () => {
 	try {
