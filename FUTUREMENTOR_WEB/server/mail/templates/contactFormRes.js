@@ -74,7 +74,7 @@ exports.contactUsEmail = (
     
     <body>
         <div class="container">
-            <a href="https://-edtech-project.vercel.app"><img class="logo"
+            <a href=""><img class="logo"
                     src="https://dynamic.design.com/preview/logodraft/dc264214-2a97-4b69-a481-f3f49e59d887/image/large.png" alt="Futurementor Logo"></a>
             <div class="message">Contact Form Confirmation</div>
             <div class="body">
