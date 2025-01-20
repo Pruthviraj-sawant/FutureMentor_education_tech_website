@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(
 	cors({
 		// origin:"http://localhost:3000",
-		origin:"future-mentor-education-tech-website-frontend.vercel.app",
+		origin:"future-mentor-education-z7bm.vercel.app",
 		credentials:true,
 	})
 )
