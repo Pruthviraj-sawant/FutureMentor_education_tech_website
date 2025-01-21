@@ -1,5 +1,5 @@
-// const BASE_URL = "http://localhost:4000/api/v1"
-const BASE_URL="future-mentor-website-yfli.vercel.app"
+const BASE_URL = "http://localhost:4000/api/v1"
+// const BASE_URL="future-mentor-website-yfli.vercel.app"
 
 // AUTH ENDPOINTS
 export const endpoints = {
