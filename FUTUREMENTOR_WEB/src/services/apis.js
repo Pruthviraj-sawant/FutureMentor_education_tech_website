@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:4000/api/v1"
+// const BASE_URL = "http://localhost:4000/api/v1"
+const BASE_URL = "https://futurementor-education-tech-website-new.onrender.com/api/v1"
 // const BASE_URL="future-mentor-website-yfli.vercel.app"
 
 // AUTH ENDPOINTS
