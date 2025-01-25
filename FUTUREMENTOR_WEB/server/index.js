@@ -14,7 +14,7 @@ const fileUpload = require("express-fileupload");
  require("dotenv").config();
 
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 //database connect
 database.connect();
@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(
 	cors({
 		// origin:"http://localhost:3000",
-		origin:["future-mentor-education-tech-website-rggo.vercel.app","http://localhost:3000"],
+		origin:["https://future-mentor-education-tech-website-rggo.vercel.app","http://localhost:3000"],
 		// origin:"future-mentor-education-z7bm.vercel.app",
 		methods: ['GET', 'POST', 'PUT', 'DELETE'],
 		credentials:true,
